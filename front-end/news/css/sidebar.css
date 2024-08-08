@@ -1,0 +1,62 @@
+.sidenavbar {
+    margin-top: 20px;
+    padding: 0;
+    width: 175px;
+    background-color: #979775;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  
+  .sidenavbar a {
+    display: block;
+    color: rgb(0, 0, 0);
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  
+  .sidenavbar a.click {
+    background-color: #9c9c74;
+    color: white;
+  }
+  
+  
+  .sidenavbar a:hover:not(.click) {
+    background-color: #555;
+    color: white;
+  }
+  
+  
+  div.info {
+    margin-top: 10px;
+    margin-left: 200px;
+    padding: 1px 16px;
+  }
+  
+  
+  @media screen and (max-width: 700px) {
+    .sidenavbar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidenavbar a {float: left;}
+    div.info {margin-left: 0;}
+  }
+  
+  
+  @media screen and (max-width: 400px) {
+    .sidenavbar a {
+      text-align: center;
+      float: none;
+  
+      
+      
+    }
+  }
+
+  .click {
+    background-color: #717171;
+  }

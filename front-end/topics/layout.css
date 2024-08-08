@@ -1,0 +1,85 @@
+/* Navigation bar with animated dot */
+.navMenu {
+  position: absolute;
+  -webkit-transform: translate(200%, 100%);
+  transform: translate(200%, 100%);
+  background: transparent;
+  overflow: hidden;
+}
+
+.navMenu a {
+  margin: 5px;
+  padding: 5px;
+  background: transparent;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1em;
+  text-transform: uppercase;
+  display: inline-flexbox;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  font-family: "Montserrat", sans-serif;
+}
+
+.navMenu a:hover {
+  color: #5d7b8a;
+}
+
+.navMenu .dot {
+  width: 5px;
+  height: 5px;
+  background: #5d7b8a;
+  border-radius: 50%;
+  opacity: 0;
+  -webkit-transform: translateX(32px);
+  transform: translateX(32x);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:nth-child(1):hover ~ .dot {
+  -webkit-transform: translateX(32px);
+  transform: translateX(32x);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(2):hover ~ .dot {
+  -webkit-transform: translateX(105px);
+  transform: translateX(105x);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(3):hover ~ .dot {
+  -webkit-transform: translateX(182px);
+  transform: translateX(182x);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+.navMenu a:nth-child(4):hover ~ .dot {
+  -webkit-transform: translateX(259px);
+  transform: translateX(259x);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(5):hover ~ .dot {
+  -webkit-transform: translateX(327px);
+  transform: translateX(327x);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(6):hover ~ .dot {
+  -webkit-transform: translateX(400px);
+  transform: translateX(400x);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}

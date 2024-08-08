@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Title -->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trash</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="/front-end/layout.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="/front-end/img/trash-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/front-end/img/trash-16x16.png">
+</head>
+
+<!-- Navigation bar -->
+<nav class="navMenu">
+  <a href="/front-end/home/index.html">Home</a>
+  <a href="/front-end/shop/shop.html">Shop</a>
+  <a href="/front-end/topics/topicpage.html">Topics</a>
+  <a href="/front-end/news/subscribebox.html">News</a>
+  <a href="/front-end/quiz/Type-2/QuizType2.html">Quiz</a>
+  <a href="/front-end/review/review.html">Review</a>
+  <div class="dot"></div>
+</nav>
+
+<body>
+<div style="height: 1px; background-color: #0D3219"></div>
+
+<!-- Check styles -->
+<a class="button" href="#popup1">Style 1</a>
+
+<div id="popup1" class="overlay">
+	<div class="popup">
+		<h2>Address only subscription</h2>
+    <p>Lorem ipsum</p>
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+			<!-- form -->
+      <!-- In basic components -->
+<form id="subscribe">
+<input type="email" name="email" placeholder="Your Email Please" class="email-form" required>
+<button type="submit" class="button" id="newsignup">Sign up</button>
+</form>
+<!-- end form-->
+	</div>
+	</div>
+</div>
+
+<br>
+
+<a class="button" href="#popup2">Style 2</a>
+<div id="popup2" class="overlay">
+	<div class="popup">
+    <form id="subscribe"; align="right">
+    <table>
+      <tr>
+        <th colspan="3"><h2>Right Aligned Boxes</h2></th>
+  </tr>
+  <tr>
+    <td>Lorem ipsum</td>
+    <td>
+      <input type="email" name="email"            placeholder="Your Email Please"            class="email-form" required>
+      </td>
+  </tr>
+      <tr>
+        <td> </td>
+        <!-- Needs to have dummy text showing first -->
+        <td><select name="gender" id="gender">
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+    <option value="everything">Everything</option>
+  </select></td>
+      </tr>
+      <tr>
+        <td> </td>
+        <td><button type="submit" class="button" id="newsignup">Sign up</button></td>
+      </tr>
+    </table>
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+</form>
+<!-- end form-->
+	</div>
+	</div>
+</div>
+
+</body>
+</html>

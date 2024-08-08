@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  
+  .🔔{
+    width: 100%;
+    height: 100vh;
+    background: #8ae6a3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  button{
+    width: 250px;
+    height: 80px;
+    border: 0;
+    outline: none;
+    background: #2F2F2F;
+    color: #FFFFFF;
+    font-size: 1em;
+    border-radius: 40px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .✅{
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    position: absolute;
+    top: 0;
+    right: -40;
+    opacity: 0;
+  }
+  
+  .✅ svg{
+    width: 40px;
+    margin: 20px;
+  }
+  
+  svg path{
+    stroke-width: 3;
+    stroke: #FFFFFF;
+    stroke-dasharray: 34;
+    stroke-dashoffset: 34;
+    stroke-linecap: round;
+  }
+
+  .active{
+      background: #FF2B75;
+      transition: 1s;
+  }
+
+  .active .✅{
+    right: 0;
+    opacity: 1;
+    transition: 1s;
+}
+
+.active p{
+    margin-right: 125px;
+    transition: 1s;
+}
+
+.active svg path{
+    stroke-dashoffset: 0;
+    transition: 1s;
+    transition-delay: 1s;
+}

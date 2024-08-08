@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div style="position: absolute; top: 0;"><h2 style="text-align: left;font-weight: bold;font-size: 55px; ">Search & Click..</h2></div>
+        <div style="
+		margin-top: 150px;
+		margin-left: 130px;
+		margin-bottom: 50px;">
+	  
+		
+			 <input type="search" name="search" id="search" autocomplete="off" style="width: 70%;" placeholder="Which shop are you looking for?">
+	
+			
+</div>
+    
+	 <table style="margin-left:auto;margin-right:auto;">
+		<tbody>     
+		  <tr>
+			<td style="display: none;font-size: 20;">H&M</td>
+			<td style="text-align: center"><h2 style="font-weight: bold;font-size: 45px;">H&M</h2></td>
+			<td><span id="edit"><input type="image" src="Photos/1.jpeg" name="saveForm" id="saveForm" onClick="javascript: (function(){saveForm.blur()})()" item="1" alt="save" style=" width:610px; height: 610px; object-fit: contain;"/></span>      
+			</td>
+		
+		  </tr>
+		  <tr>
+			<td style="display: none;">ADIDAS</h2></td>
+			<td><span id="edit"><input type="image" src="Photos/2.jpeg" name="saveForm" id="saveForm" onClick="javascript: (function(){saveForm.blur()})()" item="2" alt="save" style=" width:610px; height: 610px; object-fit: contain;"/></span>      
+			</td>
+		  <td  style="text-align: center"><h2 style="font-weight: bold;font-size: 45px;">ADIDAS</h2></td> 
+		  </tr>
+		  <tr>
+			<td style="display: none;" >NIKE</td>
+			<td style="text-align: center"><h2 style="font-weight: bold;font-size: 45px;">NIKE</h2></td>
+			<td><span id="edit"><input type="image" src="Photos/4.jpeg" name="saveForm" id="saveForm" onClick="javascript: (function(){saveForm.blur()})()" item="3" alt="save" style=" width:610px; height: 610px; object-fit: contain;"/></span>      
+			</td>
+			
+		  </tr>
+		  <tr>
+			<td style="display: none;">JD</td> 
+			<td><span id="edit"><input type="image" src="Photos/3.jpeg" name="saveForm" id="saveForm" onClick="javascript: (function(){saveForm.blur()})()"  item="4" alt="save" style=" width:610px; height: 610px; object-fit: contain;"/></span>      
+			</td>
+			  <td  style="text-align: center"><h2 style="font-weight: bold;font-size: 45px;">JD</h2></td> 
+			</tr>
+			<tr>
+				<td style="display: none;" >PUMA</td>
+				<td style="text-align: center"><h2 style="font-weight: bold;font-size: 45px;">PUMA</h2></td>
+				<td><span id="edit"><input type="image" src="Photos/5.jpeg" name="saveForm" id="saveForm" onClick="javascript: (function(){saveForm.blur()})()"  item="5" alt="save" style=" width:610px; height: 610px; object-fit: contain;"/></span>      
+				</td>
+				
+			  </tr>
+		</tbody>
+	  </table>
+	  <script>
+
+		const searchInput = document.getElementById("search");
+		const rows = document.querySelectorAll("tbody tr");
+		console.log(rows);
+		searchInput.addEventListener("keyup", function (event) {
+		  const q = event.target.value.toLowerCase();
+		  rows.forEach((row) => {
+			row.querySelector("td").textContent.toLowerCase().startsWith(q)
+			  ? (row.style.display = "table-row")
+			  : (row.style.display = "none");
+		  });
+		});
+	  </script>
+
+        <!-- content pop up  -->
+        <div class="box-modal">
+			<div class="overlay"></div>
+			<div class="body-modal">
+			  <div class="inner-body-modal">
+				  <textarea placeholder="This is an awesome comment box" rows="20" name="comment[text]" id="commentText" cols="40" class="ui-autocomplete-input" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true"></textarea>
+				  <br><input class="ui-autocomplete-input" position="relative" placeholder="Name" type="text" id="fname" name="fname"><br>
+				  <button onClick=Comment(0,1) type="submit" class="Button"><i class="fa fa-comment" aria-hidden="true"></i></button>
+				 
+	 <!-- Contenedor Principal -->
+<div class="comments-container">
+	<h1>Comments</h1>
+  
+	<ul id="comments-list" class="comments-list">
+	  <li>
+		<div class="comment-main-level">
+		  <div class="comment-avatar"><img src="http://i9.photobucket.com/albums/a88/creaticode/avatar_1_zps8e1c80cd.jpg" alt=""></div>
+		  <div class="comment-box">
+			<div class="comment-head">
+			  <h6 class="comment-name">Steven R</a></h6>
+			</div>
+			<div class="comment-content">
+				i own a cleaning business so i ruin shirts on a regular basis im happy when i find tshirts that fit and at a good price .
+			</div>
+		  </div>
+		</div>
+	  </li>
+  
+	  <li>
+		<div class="comment-main-level">
+		  <div class="comment-avatar"><img src="http://i9.photobucket.com/albums/a88/creaticode/avatar_2_zps7de12f8b.jpg" alt=""></div>
+		  <div class="comment-box">
+			<div class="comment-head">
+			  <h6 class="comment-name">Anonymous skunk</a></h6>
+			</div>
+			<div class="comment-content">
+				I always buy from this shop. My orders are delivered quickly. Affordable and comfortable t-shirts.
+			</div>
+		  </div>
+		</div>
+	  </li>
+	</ul>
+  </div>        
+      
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.slim.js'></script><script src="app.js "></script>
+</body>
+</html>
+

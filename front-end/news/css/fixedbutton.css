@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+.content{
+    width: 40%px;
+    margin: 0 auto;
+}
+
+.content p{
+    padding-bottom: 15px;
+}
+
+.fixed-btn{
+    position: fixed;
+    bottom: 10%;
+    right: 0px;
+}

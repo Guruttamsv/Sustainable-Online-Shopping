@@ -1,0 +1,53 @@
+<head>
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="popup_css.css">
+    <link rel="stylesheet" href="flex.css">
+    <link rel="stylesheet" href="form_css.css">
+    <title>
+        Flexbox formatted pop-up layout
+    </title>
+</head>
+
+<!-- Check styles -->
+<a class="button" href="#popup1">Style 1</a>
+
+<div id="popup1" class="overlay">
+	<div class="popup">
+		<h2>Address only subscription</h2>
+    <p>Lorem ipsum</p>
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+			<!-- form -->
+      <!-- In basic components -->
+<form id="subscribe">
+<input type="email" name="email" placeholder="Your Email Please" class="email-form" required>
+<button type="submit" class="button" id="newsignup">Sign up</button>
+</form>
+<!-- end form-->
+	</div>
+	</div>
+</div>
+
+<br>
+<a class="button" href="#popup2">Style 2</a>
+<div id="popup2" class="overlay">
+	<div class="popup">
+    <h2>Flexbox sidebar content format</h2>
+<div class="content">
+  <div class="col">    
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Maecenas accumsan lacus vel facilisis volutpat. Eleifend quam adipiscing vitae proin sagittis.</p>
+  </div>
+  <div class="col"> 
+    <p><form id="subscribe">
+      <input type="email" name="email"            placeholder="Your Email Please"            class="email-form" required is="email"><td><select name="gender" id="gender">
+    <option value="" disabled selected hidden>Choose Gender...</option>
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+    <option value="everything">Both</option>
+  </select>
+    <button type="submit" class="button" id="newsignup">Sign up</button>
+    <a class="close" href="#">&times;</a>
+    </form>
+  </p>
+  </div>
+</div>

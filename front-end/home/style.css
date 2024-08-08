@@ -1,0 +1,141 @@
+#waves {
+    background-image: url("/front-end/home/img/index.svg");
+    background-color: #fff;
+    width: 1420px;
+    height: 2920px;
+    
+}
+
+#trash {
+    position: absolute;
+    top: 150px;
+    left: 190px;
+    width: 1000px;
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5em;
+    font-style: normal;
+    color: #fff;
+}
+
+#first-text a {
+    text-decoration: none;
+    color: rgb(185, 207, 170);
+}
+
+#first-text a:hover {
+    color: rgb(117, 143, 110);
+}
+
+#first-text { 
+    position: absolute;
+    top: 870px;
+    right: 200px;
+    left: 600px;
+    text-align: right;
+}
+
+#first-img { 
+    position: absolute;
+    top: 850px;
+    left: 290px;
+    width: 240px;
+    transform: rotate(-17deg)
+}
+
+#second-text a {
+    text-decoration: none;
+    color: rgb(141, 129, 108);
+}
+
+#second-text a:hover {
+    color: rgb(110, 98, 64);
+}
+
+#second-text { 
+    position: absolute;
+    top: 1340px;
+    right: 500px;
+    left: 300px;
+}
+
+#second-img { 
+    position: absolute;
+    top: 1270px;
+    left: 990px;
+    width: 300px;
+}
+
+#third-text a {
+    text-decoration: none;
+    color: rgb(190, 160, 58);
+}
+
+#third-text a:hover {
+    color: rgb(122, 99, 23);
+}
+
+#third-text { 
+    position: absolute;
+    top: 1785px;
+    right: 200px;
+    left: 600px;
+    text-align: right;
+}
+
+#third-img { 
+    position: absolute;
+    top: 1810px;
+
+    left: 140px;
+    width: 400px;
+}
+
+#fourth-text a {
+    text-decoration: none;
+    color: rgb(138, 91, 52);
+}
+
+#fourth-text a:hover {
+    color: rgb(112, 62, 33);
+}
+
+#fourth-text { 
+    position: absolute;
+    top: 2170px;
+    right: 660px;
+    left: 170px;
+}
+
+#fourth-img { 
+    position: absolute;
+    top: 2170px;
+    left: 850px;
+    width: 470px;
+}
+
+#fifth-text a {
+    text-decoration: none;
+    color: rgb(116, 84, 69);
+}
+
+#fifth-text a:hover {
+    color: rgb(99, 77, 62);
+}
+
+#fifth-text { 
+    position: absolute;
+    top: 2665px;
+    right: 200px;
+    left: 770px;
+    text-align: right;
+}
+
+#fifth-img { 
+    position: absolute;
+    top: 2540px;
+    left: 250px;
+    width: 260px;
+}

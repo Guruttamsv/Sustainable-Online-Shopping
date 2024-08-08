@@ -1,0 +1,55 @@
+#left-h{
+    float: left;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+#right-h{
+    float: right;
+}
+
+#right-h li{
+    display: inline-block;
+    margin: 10px;
+}
+
+.collapsible {
+    cursor: pointer;
+    padding: 18px;
+    width: 82%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    margin-left: 200px;
+    background-color: #6b705c;
+  }
+
+  h3{
+    margin-left: 200px; 
+  }
+
+  hr{
+    color:aliceblue;
+    margin-left: 200px; 
+    width: 83%;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: rgba(151, 151, 117, 0.8);
+  }
+  
+   /* padding works as: top, right, bottom, left*/ 
+  .info {
+    color: black;
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+  .additional-information{
+    margin-left: 200px; 
+  }

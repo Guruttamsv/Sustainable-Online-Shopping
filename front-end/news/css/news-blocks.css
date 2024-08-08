@@ -1,0 +1,98 @@
+#news{
+    display: flex;
+    flex-direction: column;
+    margin-left: 200px;
+    justify-content: center;
+    padding: 30px;
+}
+
+.news-heading{
+    margin: 20px 0px;
+}
+
+.news-heading h1{
+    font-size: 3.5rem;
+    color: black;
+}
+
+.simple-filter{
+    display: flex;
+    align-items: center;
+    margin: 40px 0px 20px 0px;
+    color:#33362c;
+}
+
+
+.simple-filter li{
+    color: aliceblue;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin: 0px 5px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.simple-filter li:hover{
+    opacity: 0.7;
+    transform: all ease 0.3s;
+}
+
+.filter-active{
+    border-bottom: 1px solid aliceblue;
+}
+
+.news-contain{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    margin: 10px 0px 50px 0px;
+}
+
+.content-box{
+    transition: all ease 0.3s;
+}
+
+.content-box:hover{
+    opacity: 0.5;
+    transition: all ease 0.3s;
+}
+
+.news-img{
+    width: 100%;
+    max-height: 300px;
+    overflow: hidden;
+}
+
+.news-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 3px;
+}
+
+.text .category{
+    color: aliceblue;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+.text strong{
+    font-size: 1.2rem;
+    color: #6b705c;
+    margin: 5px 0px;
+}
+
+.text .time{
+    color: aliceblue;
+    text-transform: capitalize;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}

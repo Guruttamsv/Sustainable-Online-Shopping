@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Newsletter</title>
+
+    
+        <!--css links-->
+        <link rel="stylesheet" type="text/css" href="/front-end/home/css/style.css">
+        <link rel="stylesheet" type="text/css" href="/front-end/LAYOUT.css">
+        <link rel="stylesheet" type="text/css" href="/front-end/news/css/flex.css">
+        <link rel="stylesheet" type="text/css" href="/front-end/news/css/form_css.css">
+        <link rel="stylesheet" type="text/css" href="/front-end/news/css/popup_css.css">
+        <link rel="stylesheet" type="text/css" href="/front-end/news/css/fixedbutton.css">
+        <link rel="stylesheet" type="text/css" href="/front-end/news/css/footer.css">
+        <link rel="stylesheet" type="text/css" href="/front-end/news/css/content.css">
+        <link rel="stylesheet" type="text/css" href="/front-end/news/css/sidebar.css">
+
+        <!--webpage icon-->
+        <link rel="icon" type="image/png" sizes="32x32" href="/front-end/home/img/trash-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/front-end/home/img/trash-16x16.png"> 
+    </head>
+
+    <nav class="navMenu">
+        <a href="/front-end/home/index.html">Home</a>
+        <a href="/front-end/shop/shop.html">Shop</a>
+        <a href="/front-end/topics/topicpage.html">Topics</a>
+        <a href="/front-end/news/newsletter.html">News</a>
+        <a href="/front-end/quiz/Type-2/QuizType2.html">Quiz</a>
+        <a href="/front-end/review/review.html">Review</a>
+        <div class="dot"></div>
+    </nav>
+
+    <div class="sidenavbar">
+        <a class="click" href="newsletter.html">Newsletter</a>
+        <a href="archive.html">Archive</a>
+      </div>
+
+      <body>
+        <br><br><br><br><br>
+        <section>
+            <h3>Download previous newsletters: </h3>
+            <hr>
+            <br>
+            <div class="additional-information">
+                <p class="archive-text">All previously displayed newsletters are archived here for download for easier access.</p>
+                <br>
+                <p class="archive-text">Select your desired month and look through the archived newsletter titles as well when they were published.</p>
+            </div>
+            <br>
+
+            <button class="collapsible">February</button>
+            <div class="info">
+                <ul>
+                    <li><a href="/front-end/news/SAMPLE_NEWSLETTER.docx" download> "Our featured brand this week is..." (27<sup>th</sup> February 2022) </a></li>
+                    <li><a href="/front-end/news/SAMPLE_NEWSLETTER.docx" download> "Update from the team..." (13<sup>th</sup> February 2022) </a></li>
+                    <li><a href="/front-end/news/SAMPLE_NEWSLETTER.docx" download> "Information about the brands in the shop..." (5<sup>th</sup> February 2022) </a></li>
+                </ul>
+            </div>
+
+            <button class="collapsible">January</button>
+            <div class="info">
+                <ul>
+                    <li><a href="/front-end/news/SAMPLE_NEWSLETTER.docx" download> "Upcoming brands this year..." (25<sup>th</sup> January 2022) </a></li>
+                    <li><a href="/front-end/news/SAMPLE_NEWSLETTER.docx" download> "Our featured brand this week is..." (10<sup>th</sup> January 2022) </a></li>
+                    <li><a href="/front-end/news/SAMPLE_NEWSLETTER.docx" download> "General website update" (5<sup>th</sup> January 2022) </a></li>
+                </ul>
+            </div>
+        </section>
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+    
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + "px";
+                    }
+                });
+            }
+        </script>
+    
+            <div class="fixed-btn">
+    
+                <a class="button" href="#popup"> <button style="background-color: #6b705c; color:aliceblue;">Newsletter Signup</button></a>
+                 <div id="popup" class="overlay">
+                     <div class="popup">
+                        <h1 align ='center'>Signup to our Newsletter!</h1>
+                        <br>
+                 <div class="content">
+                    <div class="col"> 
+                        <p></p>   
+                        <p></p>
+                        <p class="archive-text">You will get up-to-date information about our website as well as information about brands displayed in our shop.
+                            <br><br>
+                            Every week we will feature a brand that work towards our mission of informing people about sustainable brands and helping them achieve a sustainable lifestyle.
+                        </p>
+                    </div>
+                    <div class="col"> 
+                        <p>
+                            <form id="subscribe" form action="connect.php" method="POST">
+                                <input type="text" name="name" placeholder="Name" required>
+                                <input type="email" name="email"placeholder="Email"class="email-form" required is="email">
+                                <button type="submit" class="submit-button" id="newsignup">Sign up</button>
+                                <a class="close" href="#">&times;</a>
+                            </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <footer>
+            &copy;trash
+        </footer>
+      </body>
+
+</html>

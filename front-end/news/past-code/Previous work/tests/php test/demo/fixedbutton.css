@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+
+}
+
+.content{
+    width: 600px;
+    margin: 0 auto;
+}
+
+.content p{
+    padding-bottom: 15px;
+}
+
+.button{
+    border-radius:10px;
+}
+
+.fixed-btn{
+    position: fixed;
+    width: 180px;
+    height: 45px;
+    line-height: 45px;
+    bottom: 10%;
+    right: 3%;
+}

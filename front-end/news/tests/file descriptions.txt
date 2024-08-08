@@ -1,0 +1,37 @@
+Button Animation
+----------------------------------------
+button.css [css code for the button animation. Played around with emoji naming class]
+button_an.html [html code of button. Only includes a button which becomes animated upon click]
+----------------------------------------
+----------------------------------------
+
+Layout
+----------------------------------------
+a.html [single character page. for redirection from layout.html]
+b.html [single character page. for redirection from layout.html]
+c.html [single character page. for redirection from layout.html]
+layout.html [very basic layout of header and footer. content is collapsible]
+layout_css.css [css for layout html]
+----------------------------------------
+----------------------------------------
+
+Php test
+----------------------------------------
+index.php [work in progress php version of layout html]
+----------------------------------------
+----------------------------------------
+
+Popup
+----------------------------------------
+body.css [css code of html body]
+flex.css [flexbox layout of popup html]
+form_css.css [css code of forms in the popup html]
+popup_css.css [css code of pop up boxes in popup html]
+popup_html.html [testing of popup box layouts]
+----------------------------------------
+----------------------------------------
+
+Submit
+----------------------------------------
+check.html [simple form with submit button to check for submit]
+scropt.js [simple js that gives alert for what information is submitteds]

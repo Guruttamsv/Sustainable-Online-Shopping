@@ -1,0 +1,210 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Newsletter</title>
+
+        <!--css links-->
+        <link rel="stylesheet" type="text/css" href="/front-end/home/css/style.css">
+        <link rel="stylesheet" type="text/css" href="/front-end/layout.css">
+        <link rel="stylesheet" type="text/css" href="/front-end/news/css/flex.css">
+        <link rel="stylesheet" type="text/css" href="/front-end/news/css/form_css.css">
+        <link rel="stylesheet" type="text/css" href="/front-end/news/css/popup_css.css">
+        <link rel="stylesheet" type="text/css" href="/front-end/news/css/fixedbutton.css">
+        <link rel="stylesheet" type="text/css" href="/front-end/news/css/footer.css">
+        <link rel="stylesheet" type="text/css" href="/front-end/news/css/content.css">
+        <link rel="stylesheet" type="text/css" href="/front-end/news/css/sidebar.css">
+        <link rel="stylesheet" type="text/css" href="/front-end/news/css/news-blocks.css">
+
+        <!--webpage icon-->
+        <link rel="icon" type="image/png" sizes="32x32" href="/front-end/home/img/trash-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/front-end/home/img/trash-16x16.png">
+
+    </head>
+
+    <nav class="navMenu">
+        <a href="/front-end/home/index.html">Home</a>
+        <a href="/front-end/shop/shop.html">Shop</a>
+        <a href="/front-end/topics/topicpage.html">Topics</a>
+        <a href="/front-end/news/newsletter.html">News</a>
+        <a href="/front-end/quiz/Type-2/QuizType2.html">Quiz</a>
+        <a href="/front-end/review/review.html">Review</a>
+        <div class="dot"></div>
+    </nav>
+
+    <div class="sidenavbar">
+        <a class="click" href="newsletter.html">Newsletter</a>
+        <a href="archive.html">Archive</a>
+      </div>
+
+    <body>
+        <br><br><br><br><br>
+
+        <section id="news">
+
+            <div class="news-heading">
+                <h1>Recent Newsletters</h1>
+                <span class="time">Last update: March 14th 2022</span>
+            </div>
+
+            <ul class="simple-filter">
+                <li class="list filter-active" data-filter="all">All</li>/
+                <li class="list" data-filter="updates">Updates</li>/
+                <li class="list" data-filter="information">Information</li>/
+                <li class="list" data-filter="featured">Featured</li>/
+                <li class="list" data-filter="upcoming">Upcoming</li>
+            </ul>
+
+            <div class="news-contain">
+                <!--box1-->
+                <a href="#" class="content-box featured" style="text-decoration: none;">
+
+                    <div class="news-img">
+                        <img src="/front-end/news/news-1.jpg" alt="image1">
+                    </div>
+
+                    <div class="text">
+                        <span class="category">Feature brand</span>
+                        <strong>Our featured brand this week is...</strong>
+                        <span class="time">March 14th</span>
+                    </div>
+                </a>
+
+                <!--box2-->
+                <a href="#" class="content-box upcoming" style="text-decoration: none;">
+
+                    <div class="news-img">
+                        <img src="/front-end/news/news-2.jpg" alt="image1">
+                    </div>
+
+                    <div class="text">
+                        <span class="category">Upcoming Brands</span>
+                        <strong>Learn about these new brands coming this spring...</strong>
+                        <span class="time">March 11th</span>
+                    </div>
+                </a>
+
+                <!--box3-->
+                <a href="#" class="content-box updates" style="text-decoration: none;">
+
+                    <div class="news-img">
+                        <img src="/front-end/news/news-3.jpg" alt="image1">
+                    </div>
+
+                    <div class="text">
+                        <span class="category">Update</span>
+                        <strong>The shop has now added a few new brands, go check them out!</strong>
+                        <span class="time">March 8th</span>
+                    </div>
+                </a>
+
+                <!--box4-->
+                <a href="#" class="content-box featured" style="text-decoration: none;">
+
+                    <div class="news-img">
+                        <img src="/front-end/news/news-4.jpg" alt="image1">
+                    </div>
+
+                    <div class="text">
+                        <span class="category">Featuring brand</span>
+                        <strong>Our featured brand this week is...</strong>
+                        <span class="time">March 7th</span>
+                    </div>
+                </a>
+
+                <!--box5-->
+                <a href="#" class="content-box information" style="text-decoration: none;">
+
+                    <div class="news-img">
+                        <img src="/front-end/news/news-5.jpg" alt="image1">
+                    </div>
+
+                    <div class="text">
+                        <span class="category">Information</span>
+                        <strong>How to use this website: a comprehensive guide</strong>
+                        <span class="time">March 3rd</span>
+                    </div>
+                </a>
+
+                <!--box6-->
+                <a href="#" class="content-box featured" style="text-decoration: none;">
+
+                    <div class="news-img">
+                        <img src="/front-end/news/news-6.jpg" alt="image1">
+                    </div>
+
+                    <div class="text">
+                        <span class="category">Feature brand</span>
+                        <strong>Our featured brand this week is...</strong>
+                        <span class="time">March 1st</span>
+                    </div>
+                </a>
+
+            </div>
+
+            <p align="center">
+                <strong class="archive-text">Previous newsletter content is available at the 'Archive' section.</strong>
+            </p>
+        </section>
+
+    <footer>
+        &copy;trash
+    </footer>
+
+    <script src="/front-end/news/js/jquery.js"></script>
+    <script type="text/javascript">
+
+        $(document).on('click', '.simple-filter li', function(){
+            $(this).addClass('filter-active').siblings().removeClass('filter-active')
+        });
+
+        $(document).ready(function(){
+            $('.list').click(function(){
+                const value = $(this).attr('data-filter');
+                if(value == 'all'){
+                    $('.content-box').show('1000');
+                }
+                else{
+                    $('.content-box').not('.'+value).hide('1000');
+                    $('.content-box').filter('.'+value).show('1000');
+                }
+            });
+        });
+
+    </script>
+
+        <div class="fixed-btn">
+
+            <a class="button" href="#popup"> <button style="background-color: #6b705c; color:aliceblue;">Newsletter Signup</button></a>
+             <div id="popup" class="overlay">
+                <div class="popup">
+                    <h1 align ='center'>Signup to our Newsletter!</h1>
+                    <br>
+                    <div class="content">
+                        <div class="col"> 
+                            <p></p>   
+                            <p></p>
+                            <p class="archive-text">You will get up-to-date information about our website as well as information about brands displayed in our shop.
+                                <br><br>
+                                Every week we will feature a brand that work towards our mission of informing people about sustainable brands and helping them achieve a sustainable lifestyle.
+                            </p>
+                </div>
+                <div class="col"> 
+                    <p>
+                        <form id="subscribe" form action="connect.php" method="POST">
+                            <input type="text" name="name" placeholder="Name" required>
+                            <input type="email" name="email"placeholder="Email"class="email-form" required is="email">
+                            <button type="submit" class="submit-button" id="newsignup">Sign up</button>
+                            <a class="close" href="#">&times;</a>
+                        </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    </html>

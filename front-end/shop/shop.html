@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<!-- Title -->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trash</title>
+  <link rel="stylesheet" type="text/css" href="/front-end/shop/style.css">
+  <link rel="stylesheet" type="text/css" href="/front-end/shop/post.css">
+  <link rel="stylesheet" type="text/css" href="/front-end/layout.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="/front-end/img/trash-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/front-end/img/trash-16x16.png">
+</head>
+
+<!-- Navigation bar -->
+<nav class="navMenu">
+  <a href="/front-end/home/index.html">Home</a>
+  <a href="/front-end/shop/shop.html">Shop</a>
+  <a href="/front-end/topics/topicpage.html">Topics</a>
+  <a href="/front-end/news/newsletter.html">News</a>
+  <a href="/front-end/quiz/Type-2/QuizType2.html">Quiz</a>
+  <a href="/front-end/review/review.html">Review</a>
+  <div class="dot"></div>
+</nav>
+
+<!-- Info -->
+<img id="start" src="/front-end/shop/img/recycle.svg"/>
+<h1>Find clothing that will last forever. Garments made out of recycled, semi-recycled or fully organic materials.</h1>
+
+<!-- The Great Filter -->
+<section id="posting-system">
+  <ul class="simple-filter">
+      <li class="list filter-active" data-filter="all">All</li>
+      <li class="list" data-filter="Tops">Tops</li>
+      <li class="list" data-filter="Bottoms">Bottoms</li>
+      <li class="list" data-filter="Dress">Dress</li>
+      <li class="list" data-filter="Other">Other</li>
+  </ul>
+
+  <!-- All of the listing in shop -->
+  <div class="container">
+      <a href="https://kotn.com/products/midi-ribbed-cardigan?colour=natural&size=xs" class="content-box Tops" style="text-decoration: none;">
+          <div class="post">
+              <img src="/front-end/shop/img/1-cardigan.jpg.webp" alt="Tops">
+              <span id="brand">Kotn</span>
+              <span id="item">Midr Ribbed Cardigan</span>
+          </div>
+      </a>
+      <a href="https://wearpact.com/women/apparel/pants%20&%20shorts/woven%20twill%20roll%20up%20pant/wa1-wwr-oys" class="content-box Bottoms" style="text-decoration: none;">
+        <div class="post">
+            <img src="/front-end/shop/img/2-twill-pants.jpg" alt="Bottoms">
+            <span id="brand">Pact</span>
+            <span id="item">Woven Twill Roll Up Pant</span>
+        </div>
+      </a>
+      <a href="https://kotn.com/products/womens-lounge-tank-top?colour=black&size=xs" class="content-box Tops" style="text-decoration: none;">
+        <div class="post">
+            <img src="/front-end/shop/img/3-tank-top.jpg.webp" alt="Tops">
+            <span id="brand">Kotn</span>
+            <span id="item">Lounge Tank Top</span>
+        </div>
+      </a>
+      <a href="https://www.onequince.com/women/silk-slip-dress?color=navy&tracker=collection_best+sellers__desktop__4_7&gender=women" class="content-box Dress" style="text-decoration: none;">
+        <div class="post">
+            <img src="/front-end/shop/img/4-slip-dress.jpg.webp" alt="Dress">
+            <span id="brand">Quince</span>
+            <span id="item">Slip Dress</span>
+        </div>
+      </a>
+      <a href="https://whimsyandrow.com/products/jaclyn-dress-in-brulee" class="content-box Dress" style="text-decoration: none;">
+        <div class="post">
+            <img src="/front-end/shop/img/5-dress-in-brulee.jpg.webp" alt="Dress">
+            <span id="brand">Whimsy+Row</span>
+            <span id="item">Dress In Brulee</span>
+        </div>
+      </a>
+      <a href="https://wearpact.com/women/apparel/sweaters/open-knit%20cardigan/wa1-wbg-san" class="content-box Tops" style="text-decoration: none;">
+        <div class="post">
+            <img src="/front-end/shop/img/6-open-cardigan.jpg" alt="Tops">
+            <span id="brand">Pact</span>
+            <span id="item">Open Knit Cardigan</span>
+        </div>
+      </a>
+      <a href="https://whimsyandrow.com/collections/jumpsuits/products/westly-jumpsuit-in-black" class="content-box Other" style="text-decoration: none;">
+        <div class="post">
+            <img src="/front-end/shop/img/7-westly-jumpsuit.jpg.webp" alt="Other">
+            <span id="brand">Whimsy+Row</span>
+            <span id="item">Westly Jumpsuit</span>
+        </div>
+      </a>
+</section>
+
+<script src="/front-end/news/js/jquery.js"></script>
+<script type="text/javascript">
+
+$(document).on('click', '.simple-filter li', function(){
+  $(this).addClass('filter-active').siblings().removeClass('filter-active')
+});
+$(document).ready(function(){
+  $('.list').click(function(){
+      const value = $(this).attr('data-filter');
+      if(value == 'all'){
+          $('.content-box').show('1000');
+      }
+      else{
+          $('.content-box').not('.'+value).hide('1000');
+          $('.content-box').filter('.'+value).show('1000');
+      }
+  });
+});
+</script>
+
+</html>

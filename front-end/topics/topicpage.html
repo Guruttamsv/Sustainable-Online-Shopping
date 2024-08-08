@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Topic Home Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="layout.css">
+
+</head>
+<body>
+  
+
+  <!-- Navigation bar -->
+<nav class="navMenu">
+  <a href="/front-end/home/index.html">Home</a>
+  <a href="/front-end/shop/shop.html">Shop</a>
+  <a href="/front-end/topics/topicpage.html">Topics</a>
+  <a href="/front-end/news/newsletter.html">News</a>
+  <a href="/front-end/quiz/Type-2/QuizType2.html">Quiz</a>
+  <a href="/front-end/review/review.html">Review</a>
+  <div class="dot"></div>
+</nav>
+
+
+      <div class="sidenav">
+        <a href="topicpage.html">Topics</a>
+        <a href="hottopics.html">Hot Topics</a>
+        <a href="charities.html">Charities</a>
+        <a href="materials.html">Materials</a>
+        <a href="index.html">Discussion</a>
+      </div>
+
+
+      <div class="container">
+        <h1>Topics!</h1>
+        <p> Welcome to the Topics page! You can expect to learn and grow your knowledge regarding sustainabaility!</p>
+        <p>To make this easier for you, we have divided important topics into categories and gathered several reliable sources from different platforms.</p> 
+        <p>We have got you covered!</p> 
+        </div>
+        <body>
+
+          <div class="slideshow-container">
+          
+          <div class="slidesanimation ">
+            <img src="https://cdn.vox-cdn.com/thumbor/dPtNNZfDkPm8QYhtMWVdpLtOEmQ=/0x0:5760x4312/1220x813/filters:focal(1332x2006:2252x2926):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/61152223/shutterstock_274566236.0.jpg" style="width:100%">
+          
+          </div>
+          
+          <div class="slidesanimation ">
+            <img src="https://www.worldatlas.com/r/w960-q80/upload/b8/36/55/sustainability-alx1618.jpg" style="width:100%">
+            
+          </div>
+          
+          <div class="slidesanimation "> 
+            <img src="https://www.worldatlas.com/r/w960-q80/upload/26/07/ef/green-vanatchanan.jpg" style="width:100%">
+            
+          </div>
+          
+          <div class="slidesanimation ">
+            <img src="https://leverageedublog.s3.ap-south-1.amazonaws.com/blog/wp-content/uploads/2020/05/07221706/concept-of-sustainable-development-1160x725.png" style="width:100%">
+            
+          </div>
+          
+          <div class="slidesanimation ">
+            <img src="https://resource.temarry.com/hs-fs/hubfs/Green%20spaces.jpg?width=1500&name=Green%20spaces.jpg" style="width:100%">
+            
+          </div>
+          
+          
+          </div> -->
+          <br>
+          
+          <div style="text-align:center">
+            <span class="circle"></span> 
+            <span class="circle"></span> 
+            <span class="circle"></span> 
+            <span class="circle"></span> 
+            <span class="circle"></span> 
+          </div>
+          
+          <script>
+          var slideIndex = 0;
+          showSlides();
+          
+          function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("slidesanimation");
+            var circles = document.getElementsByClassName("circle");
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+            }
+            slideIndex++; 
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < circles.length; i++) {
+              circles[i].className = circles[i].className.replace(" click", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            circles[slideIndex-1].className += " click";
+            setTimeout(showSlides, 3000); 
+          }
+          </script>
+          
+          </body> 
+</body>
+
+</html>

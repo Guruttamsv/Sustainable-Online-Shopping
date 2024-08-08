@@ -1,0 +1,31 @@
+<head>
+    <link rel="stylesheet" href="button.css">
+    <title>
+        Submit button
+    </title>
+</head>
+
+<body>
+
+    <div class="🔔">
+        <button id="button">
+            <p id="text">Submit</p>
+            <div class="✅">
+                <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                    <path fill="transparent" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                </svg>
+            </div>
+        </button>
+    </div>
+
+    <script>
+        var button = document.getElementById("button");
+        var text = document.getElementById("text");
+
+        button.onclick = function(){
+            text.innterHTML = "Thanks";
+            button.classList.add("active");
+        }
+    </script>
+
+</body>

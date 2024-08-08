@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <textarea placeholder="This is an awesome comment box" rows="20" name="comment[text]" id="commentText" cols="40" class="ui-autocomplete-input" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true"></textarea>
+  <br><input class="ui-autocomplete-input" position="relative" placeholder="Name" type="text" id="fname" name="fname"><br>
+  <button onClick=Comment(1,0) type="submit" class="Button"><i class="fa fa-comment" aria-hidden="true"></i></button>
+
+  
+  <fieldset class="rating">
+      <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+      <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+      <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+      <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+      <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+      <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+      <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+      <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+      <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+      <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+  </fieldset>
+<!-- Contenedor Principal -->
+<div class="comments-container">
+	<h1>Comments</h1>
+  
+	<ul id="comments-list" class="comments-list">
+	  <li>
+		<div class="comment-main-level">
+		  <div class="comment-avatar"><img src="http://i9.photobucket.com/albums/a88/creaticode/avatar_1_zps8e1c80cd.jpg" alt=""></div>
+		  <div class="comment-box">
+			<div class="comment-head">
+			  <h6 class="comment-name">Anonymous eagle</a></h6>
+			</div>
+			<div class="comment-content">
+				Very good app to purchase from…orderd many items and they came super fast, would recommend as they are extremely cheaper than many other apps such as AliExpress, I use to shop at AliExpress for a long time but now have found a better app which is FANNO 🤩
+			</div>
+		  </div>
+		</div>
+	  </li>
+  
+	  <li>
+		<div class="comment-main-level">
+		  <div class="comment-avatar"><img src="http://i9.photobucket.com/albums/a88/creaticode/avatar_2_zps7de12f8b.jpg" alt=""></div>
+		  <div class="comment-box">
+			<div class="comment-head">
+			  <h6 class="comment-name">Fury_N</a></h6>
+			</div>
+			<div class="comment-content">
+				Dosnt even deserve 0 stars. Placed order 2nd January still not arrived. Have sent email after email no response. Can't track order the supplier I ordered from dosnt exist the theives. Took money buy cant any more got new bank card they scum and thieves. NOT ORDER THROUGH THESES
+			</div>
+		  </div>
+		</div>
+	  </li>
+	</ul>
+  </div>  
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.slim.js'></script><script src="app.js "></script>
+</body>
+</html>

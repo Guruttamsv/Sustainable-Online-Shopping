@@ -1,0 +1,150 @@
+* {
+    background-color: #7ea0b1;
+}
+
+
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.7em;
+    font-weight: 500;
+    text-align: right;
+    position: absolute;
+    color: #fff;
+    top: 140px;
+    left: 105px;
+    right: 800px;
+    background: transparent;
+    text-shadow: #33362c;
+}
+#start {
+    position: absolute;
+    opacity: 60%;
+    top: 90px;
+    left: 700px;
+    width: 600px;
+}
+
+
+#posting-system {
+    display: flex;
+    flex-direction: column;
+    padding-top: 340px;
+    justify-content: center;
+}
+
+.simple-filter{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    color:#33362c;
+}
+
+.simple-filter li{
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1em;
+    margin: 5px 0px;
+    cursor: pointer;
+    user-select: none;
+    list-style-type: none;
+    border-bottom: 2px solid #fff;
+}
+
+.simple-filter li:hover{
+    color: #5d7b8a;
+    transform: all ease 0.3s;
+    border-bottom: 2px solid #5d7b8a;
+}
+
+.filter-active{
+    font-weight: 700;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 80px;
+    padding: 90px;
+    overflow: hidden;
+}
+
+.content-box{
+    animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    -webkit-animation: fadein 2s;
+    -o-animation: fadein 2s;
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.content-box:hover{
+    opacity: 0.5;
+    transition: all ease 0.3s;
+}
+
+.post {
+    width: 100%;
+    min-height: 300px;
+    overflow: scroll;
+}
+
+.post img{
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    object-position: center;
+    padding-bottom: 15px;
+}
+
+.post span {
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding: 3px 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    text-align: right;
+}
+
+#brand {
+    opacity: 75%;
+    font-size: 1em;
+}
+
+#item {
+    font-size: 1.2em;
+}

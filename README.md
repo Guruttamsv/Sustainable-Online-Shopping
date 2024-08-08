@@ -3,18 +3,6 @@
 
 ## Group number : 46
 
-### Group Members
-
-Name          | Student ID | Feature Contribution |
---------------|------------|----------------------|
-Karl          | 2022092    | Home & store page
-Riya          | 2033138    | Topics
-Lin           | 1946170    | Newsletter
-Pouria        | 2050128    | Quiz
-Guruttam      | 2024435    | Review page
-Armughan      | 1925825    | Donations
-June          | 1938560    | *AWOL*
-
 ## Project Idea
 
 ### UN Sustainable development goal number: 12
@@ -32,18 +20,5 @@ Finding alternative clothing options. Receive news about how to live sustainably
 1. Back-end: Node.js, Express.js
 2. Front-end: HTML, CSS & JavaScript
 3. Database: MySQL
-4. Testing:
 
 ---
-
-****Sections below to be completed by the end****
-
-### Dependencies
-
----
-
-### Installation instructions
-
----
-
-### Usage instructions
